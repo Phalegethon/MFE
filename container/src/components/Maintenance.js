@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
 
 export default () => {
-  return <div>BAKIM ___ VAR</div>;
+  return <div><center>App didn't started yet...  </center></div>;
 };

@@ -14,8 +14,13 @@ const MarketingLazy = React.lazy(
     () => import('./components/MarketingApp').catch(error => import("./components/Maintenance"))
 );
 
-const Authlazy = lazy(() => import("./components/AuthApp"));
-const Dashboardlazy = lazy(() => import("./components/DashboardApp"));
+const Authlazy = React.lazy(
+    () => import('./components/AuthApp').catch(error => import("./components/Maintenance"))
+);
+
+const Dashboardlazy = React.lazy(
+    () => import('./components/DashboardApp').catch(error => import("./components/Maintenance"))
+);
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
